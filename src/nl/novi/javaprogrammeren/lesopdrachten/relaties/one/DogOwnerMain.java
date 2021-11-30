@@ -1,7 +1,5 @@
 package nl.novi.javaprogrammeren.lesopdrachten.relaties.one;
 
-public class DogOwnerMain {
-
     /*
     Opdracht
     Geef de klasse Dog de volgende instance variables: name, species, age, sex. Datatypes mag je zelf verzinnen.
@@ -19,9 +17,14 @@ public class DogOwnerMain {
     Instantieer hieronder de objecten en laat zien dat je code werkt.
      */
 
+public class DogOwnerMain {
     public static void main(String[] args) {
+        Dog dog = new Dog("Barra", "vuilnisbak", 12, "teef");
 
+        DogOwner nick = new DogOwner("Nick", "male");
+        nick.setDog(dog);
+
+        System.out.println(nick.toString());
 
     }
-
 }
